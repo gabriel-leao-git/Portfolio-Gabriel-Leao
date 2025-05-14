@@ -4,137 +4,246 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Leão | Portfólio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="icone-gl-2.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/icons/icon3.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Menu de Navegação -->
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <a href="#"><span class="code-symbol">&lt;/&gt;</span> Gabriel Leão</a>
-            </div>
+            <a href="index.html" class="logo">&lt;/&gt; Gabriel Leão</a>
             <nav class="navbar">
-                <ul class="nav-menu">
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#about">Sobre Mim</a></li>
-                    <li><a href="#contact">Contatos</a></li>
+                <button class="menu-close"><i class="fas fa-times"></i></button>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre Mim</a></li>
+                    <li><a href="#skills" class="nav-link">Tecnologias</a></li>
+                    <li><a href="#contact" class="nav-link">Contrate-me</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
             </nav>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Seção Carrossel -->
-        <section id="projects" class="section carousel-section">
-            <div class="container">
-                <h2 class="section-title">Meus Projetos</h2>
-                <div class="carousel-container">
-                    <button class="carousel-btn prev-btn" aria-label="Previous project">&larr;</button>
-                    <div class="carousel">
-                        <!-- Slides serão inseridos via JS -->
+    <!-- Hero Section com Carrossel -->
+    <section id="home" class="hero">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item active">
+                    <div class="carousel-content">
+                        <!--<h1 class="slide-title">Projeto 1</h1>-->
+                        <!--<p class="slide-description">Uma barbearia moderna, utilizando a tecnologia a seu favor para atrair mais clientes.</p>-->
+                        <a href="https://gabriel-leao-git.github.io/Invictus-Barbearia/" class="btn" target="_blank">Ver Projeto</a>
                     </div>
-                    <button class="carousel-btn next-btn" aria-label="Next project">&rarr;</button>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <!--<h1 class="slide-title">Projeto 2</h1>-->
+                        <p class="slide-description">Descrição do segundo projeto impressionante.</p>
+                        <a href="#" class="btn">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                       <!--<h1 class="slide-title">Projeto 3</h1>-->
+                        <p class="slide-description">Descrição do terceiro projeto revolucionário.</p>
+                        <a href="#" class="btn">Ver Projeto</a>
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="carousel-controls">
+                <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="carousel-dots"></div>
+                <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <span></span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-        <!-- Seção Sobre Mim -->
-        <section id="about" class="section about-section">
-            <div class="container">
-                <h2 class="section-title">Sobre Mim</h2>
-                <div class="about-content">
-                    <div class="about-images">
-                        <img src="fotos/com-capacete.png" alt="Eu em frente um monumento em Teresopolis" class="about-img scroll-trigger left">
-                        <img src="fotos/em-lavrinhas.png" alt="Eu na entrada de Lavrinhas bairro em SP" class="about-img scroll-trigger left">
-                        <img src="fotos/em-campo.png" alt="Eu em um campo de futebol" class="about-img scroll-trigger left">
-                    </div>
-                    <div class="about-text scroll-trigger right">
-                        <h3>Gabriel Leão!</h3>
-                        <p>Sou Gabriel Leão, um jovem de 23 anos apaixonado por tecnologia e desenvolvimento web. Atualmente curso Engenharia de Software enquanto trabalho, buscando minha primeira oportunidade profissional na área de TI, com foco especial em desenvolvimento front-end.</p><br>
-                        <p>Como profissional, me destaco pela proatividade e pela capacidade de aprender rapidamente. Concluí diversos cursos de front-end (HTML, CSS e JavaScript) e agora estou expandindo meus conhecimentos em React e inteligência artificial, áreas que estudo diariamente para me manter atualizado com as tendências do mercado. Em breve, começarei um curso especializado em UI/UX design para complementar minha formação e oferecer soluções mais completas.</p><br>
-                        <p>Minha rotina é marcada pela dedicação - concilio trabalho e estudos com disciplina, sempre buscando aplicar na prática o que aprendo através de projetos pessoais. Acredito que minha combinação de conhecimentos técnicos, vontade de aprender e visão criativa pode trazer valor significativo para equipes de desenvolvimento web.</p><br>
-                        <p>Tenho grande interesse em oportunidades que me permitam crescer profissionalmente enquanto contribuo com projetos desafiadores. Sou movido pela busca constante de conhecimento e pela satisfação de transformar linhas de código em experiências digitais significativas para os usuários.</p><br>
-                        <p></p>
-                    </div>
+    <!-- Sobre Mim -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">Sobre <span>Mim</span></h2>
+            <div class="about-content">
+                <div class="about-image animate-left">
+                    <img src="imagens/fotos/com-capacete.png" alt="Gabriel Leão">
                 </div>
-            </div>
-        </section>
+                <div class="about-text animate-right">
+                    <h3>Desenvolvedor Front-end & UI/UX Enthusiast</h3>
+                    <p>Sou Gabriel Leão, um jovem de 23 anos apaixonado por tecnologia e desenvolvimento web. Atualmente curso Engenharia de Software enquanto trabalho, buscando minha primeira oportunidade profissional na área de TI, com foco especial em desenvolvimento front-end.</p>
 
-        <!-- Seção Tecnologias -->
-<section class="section tech-section">
-    <div class="container">
-        <h2 class="section-title">Minha Trilha de Aprendizagem</h2>
-        <div class="tech-container">
-            <div class="tech-group">
-                <h3>Domínio</h3>
-                <div class="tech-grid">
-                    <div class="tech-card floating" data-tech="html">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="tech-card floating" data-tech="css">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="tech-card floating" data-tech="js">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tech-group">
-                <h3>Estudando Atualmente</h3>
-                <div class="tech-grid">
-                    <div class="tech-card floating" data-tech="react">
-                        <i class="fab fa-react"></i>
-                        <span>React</span>
-                    </div>
-                    <div class="tech-card floating" data-tech="uiux">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <span>UI/UX</span>
-                    </div>
-                    <div class="tech-card floating" data-tech="ai">
-                        <i class="fas fa-robot"></i>
-                        <span>Inteligência Artificial</span>
-                    </div>
-                </div>
-            </div>
-            <div class="tech-group">
-                <h3>Formação Acadêmica</h3>
-                <div class="tech-grid">
-                    <div class="tech-card floating" data-tech="software">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Cursando <br> Engenharia de Software</span>
+                    <p>Como profissional, me destaco pela proatividade e pela capacidade de aprender rapidamente.                  Concluí diversos cursos de front-end (HTML, CSS e JavaScript) e agora estou expandindo meus                 conhecimentos em React e inteligência artificial, áreas que estudo diariamente para me manter               atualizado com as tendências do mercado. Em breve, começarei um curso especializado em UI/UX                design para complementar minha formação e oferecer soluções mais completas.</p>
+
+                    <p>Minha rotina é marcada pela dedicação - concilio trabalho e estudos com disciplina, sempre                  buscando aplicar na prática o que aprendo através de projetos pessoais. Acredito que minha                  combinação de conhecimentos técnicos, vontade de aprender e visão criativa pode trazer valor            significativo para equipes de desenvolvimento web.</p>
+
+                    <p>Tenho grande interesse em oportunidades que me permitam crescer profissionalmente enquanto                  contribuo com projetos desafiadores. Sou movido pela busca constante de conhecimento e pela                 satisfação de transformar linhas de código em experiências digitais significativas para os              usuários.</p>
+
+                    <div class="about-info">
+                        <!--<div class="info-item">
+                            <span>Nome:</span>
+                            <p>Gabriel Leão</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>contato@gabrielleao.dev</p>
+                        </div>-->
+                        <div class="info-item">
+                            <span>Cursando:</span>
+                            <p>Engenharia de Software</p>
+                        </div>
+                        <!--<div class="info-item">
+                            <span>Experiência:</span>
+                            <p>2+ anos como Freelancer</p>
+                        </div>-->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-    </main>
+    </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="footer">
+    <!-- Tecnologias -->
+    <section id="skills" class="skills-section">
         <div class="container">
-            <div class="social-icons">
-                <a href="https://api.whatsapp.com/send?phone=5521981860119&text=Iae%20Le%C3%A3o%2C%20vim%20pelo%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os." class="icon pulse" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/gabriel-le%C3%A3o-1654a7243/" class="icon pulse" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/gabbriel_leao/" class="icon pulse" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/gabriel-leao-git" class="icon pulse" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            <h2 class="section-title">Minhas <span>Tecnologias</span></h2>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Tecnologias que Domino</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card floating" data-tech="html">
+                            <i class="fab fa-html5"></i><br>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-card floating" data-tech="css">
+                            <i class="fab fa-css3-alt"></i><br>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-card floating" data-tech="js">
+                            <i class="fab fa-js"></i><br>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Atualmente Estudando</h3>
+                    <div class="tech-grid">
+                        <div class="tech-card floating" data-tech="react">
+                            <i class="fab fa-react"></i><br>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-card floating" data-tech="ai">
+                            <i class="fas fa-robot"></i><br>
+                            <span>Inteligência Artificial</span>
+                        </div>
+                        <div class="tech-card floating" data-tech="ux">
+                            <i class="fas fa-paint-brush"></i><br>
+                            <span>UI/UX Design</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>&copy; <span id="year"></span> Gabriel Leão. Todos os direitos reservados.</p>
+        </div>
+    </section>
+
+    <!-- Contrate-me -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contrate meus <span>Serviços</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3> Leão | Desenvolvedor web</h3>
+                    <p class="animation-copy">🚀 SEU NEGÓCIO MERECE UM SITE QUE VENDE POR VOCÊ!</p>
+                        <ul>
+                            <li>✔ ÚNICO COMO VOCÊ – Design 100% original, zero cópias</li>   <li>✔ MÁQUINA DE VENDAS – Estrutura que converte visitantes em clientes</li>
+                            <li>✔ TRABALHA 24/7 – Atrai oportunidades até enquanto você dorme</li>
+                            <li>✔ CONTROLE TOTAL – Edite quando quiser, sem depender de técnico</li>            
+                        </ul><br>
+                        <p class="animation-copy">VAGAS LIMITADAS!</p>
+                        <p class="animation-copy">Design que vende. Resultados que impressionam.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <a href="mailto:desenvolvedor.leao@gmail.com?subject=Orçamento%20para%20Site%20Exclusivo&body=Olá!%20Me%20conte%20sua%20ideia%20e%20vamos%20criar%20juntos." target="_blank"><i class="fas fa-envelope"></i></a>
+                            <span>desenvolvedor.leao@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <a href="https://wa.me/5521994408585?text=Fala%20Le%C3%A3ooo%21%21%20Dei%20uma%20olhada%20no%20seu%20site%2C%20agora%20quero%20muito%20saber%20mais%20sobre%20seus%20servi%C3%A7os%F0%9F%98%81" target="_blank"><i class="fas fa-phone"></i></a>
+                            <span>+55 (21) 99440-8585</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rio de Janeiro, Brasil</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/gabriel-leao-git" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gabriel-le%C3%A3o-1654a7243/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/gabbriel_leao/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <!--<a href="#" class="social-link"><i class="fab fa-twitter"></i></a>-->
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <img src="imagens/codigos/imagem-do-codigo.png" alt="">
+                    <!--Imagem por enqunto que não sei o que fazer com os dados do formulário-->
+                    <!--<div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>-->
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>&lt;/&gt; Gabriel Leão</h3>
+                    <p>Desenvolvedor Front-end criando experiências digitais excepcionais com foco em performance, acessibilidade e design responsivo.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre Mim</a></li>
+                        <li><a href="#skills">Tecnologias</a></li>
+                        <li><a href="#contact">Contrate-me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/5521994408585?text=Fala%20Le%C3%A3ooo%21%21%20Dei%20uma%20olhada%20no%20seu%20site%2C%20agora%20quero%20muito%20saber%20mais%20sobre%20seus%20servi%C3%A7os%F0%9F%98%81" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/gabbriel_leao/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/gabriel-le%C3%A3o-1654a7243/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/gabriel-leao-git" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gabriel Leão. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
