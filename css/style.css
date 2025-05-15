@@ -228,7 +228,7 @@ img {
     background-position: center;
 }
 
-.carousel-item:nth-child(1) {
+/*.carousel-item:nth-child(1) {
     background-color: #6c63ff;
     background-image: url(../imagens/slides/slide-invictus-barbearia.png);
 }
@@ -241,7 +241,7 @@ img {
 .carousel-item:nth-child(3) {
     background-color: #2d2d3a;
     background-image: linear-gradient(135deg, #2d2d3a 0%, #1a1a22 100%);
-}
+}*/
 
 .carousel-content {
     text-align: center;
